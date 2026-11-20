@@ -613,7 +613,7 @@ header .navbar ul li a:hover {
   transform: rotate(-90deg);
 }
 .skills .skill-ring circle {
-  fill: none;
+  fill: none !important;
   stroke-width: 7;
   stroke-linecap: round;
 }
