@@ -74,13 +74,6 @@
     <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
 
     <div class="row">
-
-    <div class="image">
-        <div class="photo-frame">
-            <img draggable="false" class="tilt" src="./assets/images/profile.png" alt="Parv Bansal">
-            <span class="photo-badge"><i class="fas fa-graduation-cap"></i> B.Tech CSE @ JUET</span>
-        </div>
-    </div>
     <div class="content">
         <h3>I'm Parv</h3>
         <span class="tag">Full Stack Developer | DSA Enthusiast</span>
@@ -138,85 +131,130 @@
   <p class="skills-subtitle">Technologies I work with</p>
 
   <!-- ============================================================
-       SKILLS DATA — Each .skill-card is a category. Add or remove
-       .skill-chip spans inside .skill-list to edit your skills.
+       SKILLS DATA — Edit name, icon class, --clr (accent colour) and
+       --p (proficiency 0-100) on each .skill-card. Also update the
+       visible percent text. Add/remove .skill-card blocks as needed.
        ============================================================ -->
   <div class="skills-grid">
 
-    <div class="skill-card">
-      <div class="skill-card-head">
-        <div class="skill-card-icon"><i class="fas fa-laptop-code"></i></div>
-        <div><h3>Frontend</h3><small>Interfaces &amp; UI</small></div>
+    <div class="skill-card" style="--clr:#e44d26; --p:99;">
+      <div class="skill-ring">
+        <svg viewBox="0 0 120 120" aria-hidden="true">
+          <circle class="ring-bg" cx="60" cy="60" r="52"></circle>
+          <circle class="ring-fill" cx="60" cy="60" r="52"></circle>
+        </svg>
+        <div class="skill-ico"><i class="fab fa-html5"></i></div>
       </div>
-      <div class="skill-list">
-        <span class="skill-chip"><span class="ico"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" loading="lazy"></span>React</span>
-        <span class="skill-chip"><span class="ico"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="" loading="lazy"></span>Next.js</span>
-        <span class="skill-chip"><span class="ico"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" loading="lazy"></span>HTML5</span>
-        <span class="skill-chip"><span class="ico"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="" loading="lazy"></span>CSS3</span>
-        <span class="skill-chip"><span class="ico"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" loading="lazy"></span>JavaScript</span>
-      </div>
+      <h3 class="skill-name">HTML, CSS</h3>
+      <div class="skill-meta"><span class="skill-pct">99%</span><span class="skill-level">Expert</span></div>
     </div>
 
-    <div class="skill-card">
-      <div class="skill-card-head">
-        <div class="skill-card-icon"><i class="fas fa-server"></i></div>
-        <div><h3>Backend</h3><small>Servers &amp; APIs</small></div>
+    <div class="skill-card" style="--clr:#f2c811; --p:50;">
+      <div class="skill-ring">
+        <svg viewBox="0 0 120 120" aria-hidden="true">
+          <circle class="ring-bg" cx="60" cy="60" r="52"></circle>
+          <circle class="ring-fill" cx="60" cy="60" r="52"></circle>
+        </svg>
+        <div class="skill-ico"><i class="fas fa-chart-bar"></i></div>
       </div>
-      <div class="skill-list">
-        <span class="skill-chip"><span class="ico"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="" loading="lazy"></span>Node.js</span>
-        <span class="skill-chip"><span class="ico"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="" loading="lazy"></span>Express.js</span>
-        <span class="skill-chip"><span class="ico"><i class="fas fa-plug"></i></span>REST APIs</span>
-      </div>
+      <h3 class="skill-name">PowerBI</h3>
+      <div class="skill-meta"><span class="skill-pct">50%</span><span class="skill-level">Intermediate</span></div>
     </div>
 
-    <div class="skill-card">
-      <div class="skill-card-head">
-        <div class="skill-card-icon"><i class="fas fa-mobile-alt"></i></div>
-        <div><h3>Mobile</h3><small>Android development</small></div>
+    <div class="skill-card" style="--clr:#f0db4f; --p:85;">
+      <div class="skill-ring">
+        <svg viewBox="0 0 120 120" aria-hidden="true">
+          <circle class="ring-bg" cx="60" cy="60" r="52"></circle>
+          <circle class="ring-fill" cx="60" cy="60" r="52"></circle>
+        </svg>
+        <div class="skill-ico"><i class="fab fa-js-square"></i></div>
       </div>
-      <div class="skill-list">
-        <span class="skill-chip"><span class="ico"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="" loading="lazy"></span>Kotlin</span>
-        <span class="skill-chip"><span class="ico"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="" loading="lazy"></span>Android</span>
-        <span class="skill-chip"><span class="ico"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="" loading="lazy"></span>Java</span>
-      </div>
+      <h3 class="skill-name">JavaScript</h3>
+      <div class="skill-meta"><span class="skill-pct">85%</span><span class="skill-level">Advanced</span></div>
     </div>
 
-    <div class="skill-card">
-      <div class="skill-card-head">
-        <div class="skill-card-icon"><i class="fas fa-database"></i></div>
-        <div><h3>Databases</h3><small>Storage &amp; realtime data</small></div>
+    <div class="skill-card" style="--clr:#f89820; --p:60;">
+      <div class="skill-ring">
+        <svg viewBox="0 0 120 120" aria-hidden="true">
+          <circle class="ring-bg" cx="60" cy="60" r="52"></circle>
+          <circle class="ring-fill" cx="60" cy="60" r="52"></circle>
+        </svg>
+        <div class="skill-ico"><i class="fab fa-java"></i></div>
       </div>
-      <div class="skill-list">
-        <span class="skill-chip"><span class="ico"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="" loading="lazy"></span>MongoDB</span>
-        <span class="skill-chip"><span class="ico"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="" loading="lazy"></span>MySQL</span>
-        <span class="skill-chip"><span class="ico"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-original.svg" alt="" loading="lazy"></span>Firebase</span>
-      </div>
+      <h3 class="skill-name">Java</h3>
+      <div class="skill-meta"><span class="skill-pct">60%</span><span class="skill-level">Intermediate</span></div>
     </div>
 
-    <div class="skill-card">
-      <div class="skill-card-head">
-        <div class="skill-card-icon"><i class="fas fa-brain"></i></div>
-        <div><h3>AI / ML</h3><small>Computer vision &amp; gestures</small></div>
+    <div class="skill-card" style="--clr:#4b8bbe; --p:80;">
+      <div class="skill-ring">
+        <svg viewBox="0 0 120 120" aria-hidden="true">
+          <circle class="ring-bg" cx="60" cy="60" r="52"></circle>
+          <circle class="ring-fill" cx="60" cy="60" r="52"></circle>
+        </svg>
+        <div class="skill-ico"><i class="fab fa-python"></i></div>
       </div>
-      <div class="skill-list">
-        <span class="skill-chip"><span class="ico"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="" loading="lazy"></span>TensorFlow Lite</span>
-        <span class="skill-chip"><span class="ico"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="" loading="lazy"></span>OpenCV</span>
-        <span class="skill-chip"><span class="ico"><i class="fas fa-hand-paper"></i></span>MediaPipe</span>
-        <span class="skill-chip"><span class="ico"><i class="fas fa-eye"></i></span>YOLO</span>
-      </div>
+      <h3 class="skill-name">Python</h3>
+      <div class="skill-meta"><span class="skill-pct">80%</span><span class="skill-level">Advanced</span></div>
     </div>
 
-    <div class="skill-card">
-      <div class="skill-card-head">
-        <div class="skill-card-icon"><i class="fas fa-tools"></i></div>
-        <div><h3>Tools &amp; Core</h3><small>Workflow &amp; fundamentals</small></div>
+    <div class="skill-card" style="--clr:#61dbfb; --p:55;">
+      <div class="skill-ring">
+        <svg viewBox="0 0 120 120" aria-hidden="true">
+          <circle class="ring-bg" cx="60" cy="60" r="52"></circle>
+          <circle class="ring-fill" cx="60" cy="60" r="52"></circle>
+        </svg>
+        <div class="skill-ico"><i class="fab fa-react"></i></div>
       </div>
-      <div class="skill-list">
-        <span class="skill-chip"><span class="ico"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="" loading="lazy"></span>Git</span>
-        <span class="skill-chip"><span class="ico"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="" loading="lazy"></span>GitHub</span>
-        <span class="skill-chip"><span class="ico"><i class="fas fa-project-diagram"></i></span>DSA</span>
-        <span class="skill-chip"><span class="ico"><i class="fas fa-music"></i></span>Web Audio &amp; Canvas</span>
+      <h3 class="skill-name">ReactJS</h3>
+      <div class="skill-meta"><span class="skill-pct">55%</span><span class="skill-level">Intermediate</span></div>
+    </div>
+
+    <div class="skill-card" style="--clr:#5fa04e; --p:70;">
+      <div class="skill-ring">
+        <svg viewBox="0 0 120 120" aria-hidden="true">
+          <circle class="ring-bg" cx="60" cy="60" r="52"></circle>
+          <circle class="ring-fill" cx="60" cy="60" r="52"></circle>
+        </svg>
+        <div class="skill-ico"><i class="fab fa-node-js"></i></div>
       </div>
+      <h3 class="skill-name">NodeJS</h3>
+      <div class="skill-meta"><span class="skill-pct">70%</span><span class="skill-level">Advanced</span></div>
+    </div>
+
+    <div class="skill-card" style="--clr:#f29111; --p:97;">
+      <div class="skill-ring">
+        <svg viewBox="0 0 120 120" aria-hidden="true">
+          <circle class="ring-bg" cx="60" cy="60" r="52"></circle>
+          <circle class="ring-fill" cx="60" cy="60" r="52"></circle>
+        </svg>
+        <div class="skill-ico"><i class="fas fa-database"></i></div>
+      </div>
+      <h3 class="skill-name">MySQL</h3>
+      <div class="skill-meta"><span class="skill-pct">97%</span><span class="skill-level">Expert</span></div>
+    </div>
+
+    <div class="skill-card" style="--clr:#ffca28; --p:90;">
+      <div class="skill-ring">
+        <svg viewBox="0 0 120 120" aria-hidden="true">
+          <circle class="ring-bg" cx="60" cy="60" r="52"></circle>
+          <circle class="ring-fill" cx="60" cy="60" r="52"></circle>
+        </svg>
+        <div class="skill-ico"><i class="fas fa-fire"></i></div>
+      </div>
+      <h3 class="skill-name">FireBase</h3>
+      <div class="skill-meta"><span class="skill-pct">90%</span><span class="skill-level">Expert</span></div>
+    </div>
+
+    <div class="skill-card" style="--clr:#f05032; --p:88;">
+      <div class="skill-ring">
+        <svg viewBox="0 0 120 120" aria-hidden="true">
+          <circle class="ring-bg" cx="60" cy="60" r="52"></circle>
+          <circle class="ring-fill" cx="60" cy="60" r="52"></circle>
+        </svg>
+        <div class="skill-ico"><i class="fab fa-git-alt"></i></div>
+      </div>
+      <h3 class="skill-name">Git &amp; GitHub</h3>
+      <div class="skill-meta"><span class="skill-pct">88%</span><span class="skill-level">Advanced</span></div>
     </div>
 
   </div>
@@ -239,23 +277,23 @@
 </style>
 
 <script>
-/* Reveal skill cards when the section enters the viewport */
+/* Fill the skill rings when the cards enter the viewport */
 (function () {
   var cards = document.querySelectorAll('#skills .skill-card');
-  if (!cards.length || !('IntersectionObserver' in window)) return;
-
-  cards.forEach(function (c) { c.classList.add('sk-hide'); });
-
+  if (!cards.length) return;
+  if (!('IntersectionObserver' in window)) {
+    cards.forEach(function (c) { c.classList.add('sk-in'); });
+    return;
+  }
   var io = new IntersectionObserver(function (entries) {
     entries.forEach(function (entry) {
       if (!entry.isIntersecting) return;
       var el = entry.target;
-      var i = Array.prototype.indexOf.call(cards, el) % 3;
-      setTimeout(function () { el.classList.remove('sk-hide'); }, i * 120);
+      var i = Array.prototype.indexOf.call(cards, el) % 5;
+      setTimeout(function () { el.classList.add('sk-in'); }, i * 110);
       io.unobserve(el);
     });
-  }, { threshold: 0.15 });
-
+  }, { threshold: 0.2 });
   cards.forEach(function (c) { io.observe(c); });
 })();
 </script>
@@ -321,29 +359,6 @@
 
     <!-- ── PROJECT 1 ── -->
     <div class="project-card" data-category="Full Stack">
-      <div class="project-visual" style="--g1:#0ea5e9; --g2:#6366f1;">
-        <i class="fas fa-network-wired"></i>
-      </div>
-      <div class="project-body">
-        <span class="project-badge">Full Stack</span>
-        <h2>Provynk</h2>
-        <p>Provynk is a global talent network for SAP and enterprise tech professionals, employers and consultancies, with job posting, talent search, ATS resume scoring and team analytics.</p>
-        <div class="project-tech">
-          <span>HTML, CSS</span>
-          <span>JavaScript</span>
-          <span>FireBase</span>
-          <span>ATS Scoring</span>
-        </div>
-        <div class="project-links">
-          <!-- Replace href="#" with your actual links -->
-          <a href="https://www.provynk.com/" target="_blank" class="proj-btn live"><i class="fas fa-eye"></i> Live Website</a>
-          <a href="https://github.com/parvvvv-v/Provynk" target="_blank" class="proj-btn code"><i class="fab fa-github"></i> Source Code</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- ── PROJECT 2 ── -->
-    <div class="project-card" data-category="Full Stack">
       <div class="project-visual" style="--g1:#667eea; --g2:#764ba2;">
         <i class="fas fa-exchange-alt"></i>
       </div>
@@ -360,6 +375,28 @@
         <div class="project-links">
           <a href="https://skillswap-web.netlify.app/" target="_blank" class="proj-btn live"><i class="fas fa-eye"></i> Working Prototype</a>
           <a href="https://github.com/parvvvv-v/SkillSwap" target="_blank" class="proj-btn code"><i class="fab fa-github"></i> Source Code</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── PROJECT 2 ── -->
+    <div class="project-card" data-category="Full Stack">
+      <div class="project-visual" style="--g1:#0ea5e9; --g2:#6366f1;">
+        <i class="fas fa-network-wired"></i>
+      </div>
+      <div class="project-body">
+        <span class="project-badge">Full Stack</span>
+        <h2>Provynk</h2>
+        <p>Provynk is a global talent network for SAP and enterprise tech professionals, employers and consultancies, with job posting, talent search, ATS resume scoring and team analytics.</p>
+        <div class="project-tech">
+          <span>HTML, CSS</span>
+          <span>JavaScript</span>
+          <span>FireBase</span>
+          <span>ATS Scoring</span>
+        </div>
+        <div class="project-links">
+          <a href="https://www.provynk.com/" target="_blank" class="proj-btn live"><i class="fas fa-eye"></i> Live Website</a>
+          <a href="https://github.com/parvvvv-v/Provynk" target="_blank" class="proj-btn code"><i class="fab fa-github"></i> Source Code</a>
         </div>
       </div>
     </div>
