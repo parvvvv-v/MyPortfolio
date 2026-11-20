@@ -11,10 +11,18 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Favicon -->
+    <!-- TO CHANGE YOUR FAVICON: Replace "favicon.jpg" below with your own image filename.
+         Put your image inside ./assets/images/ and update the href path.
+         Recommended: use a square image (e.g. your photo or a logo), ideally 32x32 or 64x64 px. -->
          <link id='favicon' rel="shortcut icon" href="./assets/images/profile.png" type="image/x-png">
     <title>Portfolio | Parv Bansal</title>
 </head>
 <body oncontextmenu="return false">
+
+<!-- pre loader -->
+<!-- <div class="loader-container">
+  <img draggable="false" src="./assets/images/preloader.gif" alt="">
+</div> -->
 
 <!-- navbar starts -->
 <header>
@@ -64,34 +72,56 @@
 <!-- about section starts -->
 <section class="about" id="about">
     <h2 class="heading"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
-    
+
     <div class="row">
 
     <div class="image">
-        <img draggable="false" class="tilt" src="./assets/images/profile2.png" alt="">
+        <div class="photo-frame">
+            <img draggable="false" class="tilt" src="./assets/images/profile.png" alt="Parv Bansal">
+            <span class="photo-badge"><i class="fas fa-graduation-cap"></i> B.Tech CSE @ JUET</span>
+        </div>
     </div>
     <div class="content">
         <h3>I'm Parv</h3>
-        <span class="tag">Full Stack Developer</span>
-        
-        <p>I am a Full-Stack Web Developer and DSA enthusiast from Kota, Rajasthan. 
-          I am a Computer Science student at JUET, Guna currently in my final year.
-          I am very passionate about improving my coding skills & developing AI Based websites.
-          I build WebApps and Websites using JavaScript and Nodejs.
-          I'm currently working for myself to improve my skills & I Love to build Full-Stack clones. </p>
-        
-        <div class="box-container">
-            <!-- <div class="box">
+        <span class="tag">Full Stack Developer | DSA Enthusiast</span>
 
-            </div> -->
-            <div class="box">
-              <p><span> Email : </span> parv.proff@gmail.com</p>
-              <p><span> Place : </span> Kota, Rajasthan </p>
+        <p>I'm a Full-Stack Developer from Kota, Rajasthan, currently pursuing my B.Tech in Computer Science at JUET, Guna.
+          I love building real-world applications with clean UI and scalable backends, from React and Node.js web platforms to Android apps and AI-powered computer vision projects.</p>
+        <p>I've worked as a web developer intern at ApexPlanet Software and Zankla Studios, and I'm always sharpening my problem-solving through DSA.
+          I'm open to internships and junior roles where I can build things that matter.</p>
+
+        <div class="about-stats">
+            <div class="stat">
+                <i class="fas fa-briefcase"></i>
+                <div><strong>2</strong><span>Internships</span></div>
+            </div>
+            <div class="stat">
+                <i class="fas fa-rocket"></i>
+                <div><strong>3</strong><span>Featured Projects</span></div>
+            </div>
+            <div class="stat">
+                <i class="fas fa-code"></i>
+                <div><strong>DSA</strong><span>Problem Solver</span></div>
             </div>
         </div>
-        
+
+        <div class="box-container">
+            <div class="box">
+              <p><span><i class="fas fa-envelope"></i> Email :</span> parv.proff@gmail.com</p>
+            </div>
+            <div class="box">
+              <p><span><i class="fas fa-map-marker-alt"></i> Place :</span> Kota, Rajasthan</p>
+            </div>
+            <div class="box">
+              <p><span><i class="fas fa-university"></i> Education :</span> B.Tech CSE, JUET Guna</p>
+            </div>
+            <div class="box">
+              <p><span><i class="fas fa-handshake"></i> Status :</span> Open to Internships &amp; Junior Roles</p>
+            </div>
+        </div>
+
         <div class="resumebtn">
-            <a href="https://drive.google.com/file/d/1PIrHwTj3eGNyh9mtrB2ZHGHr5HZyKXwM/view?usp=sharing" target="_blank" class="btn"><span>Resume</span>
+            <a href="https://drive.google.com/file/d/1yVkS3lav2nTWtj9r22tXb40HJWO-PMo8/view?usp=sharing" target="_blank" class="btn"><span>Resume</span>
                 <i class="fas fa-chevron-right"></i>
             </a>
         </div>
@@ -107,166 +137,85 @@
   <h2 class="heading"><i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span></h2>
   <p class="skills-subtitle">Technologies I work with</p>
 
-
+  <!-- ============================================================
+       SKILLS DATA — Each .skill-card is a category. Add or remove
+       .skill-chip spans inside .skill-list to edit your skills.
+       ============================================================ -->
   <div class="skills-grid">
 
-    <!-- Skill Card: HTML, CSS-->
-    <div class="skill-item" data-percent="99">
-      <div class="skill-icon-wrap" style="--clr:#e44d26;">
-        <i class="fab fa-html5"></i>
+    <div class="skill-card">
+      <div class="skill-card-head">
+        <div class="skill-card-icon"><i class="fas fa-laptop-code"></i></div>
+        <div><h3>Frontend</h3><small>Interfaces &amp; UI</small></div>
       </div>
-      <div class="skill-details">
-        <div class="skill-top">
-          <span class="skill-name">HTML, CSS</span>
-          <span class="skill-pct">99%</span>
-        </div>
-        <div class="skill-track">
-          <div class="skill-fill" style="--clr:#e44d26; --w:99%;"></div>
-        </div>
+      <div class="skill-list">
+        <span class="skill-chip"><span class="ico"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="" loading="lazy"></span>React</span>
+        <span class="skill-chip"><span class="ico"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" alt="" loading="lazy"></span>Next.js</span>
+        <span class="skill-chip"><span class="ico"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="" loading="lazy"></span>HTML5</span>
+        <span class="skill-chip"><span class="ico"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="" loading="lazy"></span>CSS3</span>
+        <span class="skill-chip"><span class="ico"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="" loading="lazy"></span>JavaScript</span>
       </div>
     </div>
 
-    <!-- Skill Card: Kotlin -->
-    <div class="skill-item" data-percent="50">
-      <div class="skill-icon-wrap" style="--clr:#264de4;">
-        <i class="fab fa-css3-alt"></i>
+    <div class="skill-card">
+      <div class="skill-card-head">
+        <div class="skill-card-icon"><i class="fas fa-server"></i></div>
+        <div><h3>Backend</h3><small>Servers &amp; APIs</small></div>
       </div>
-      <div class="skill-details">
-        <div class="skill-top">
-          <span class="skill-name">PowerBI</span>
-          <span class="skill-pct">50%</span>
-        </div>
-        <div class="skill-track">
-          <div class="skill-fill" style="--clr:#264de4; --w:50%;"></div>
-        </div>
+      <div class="skill-list">
+        <span class="skill-chip"><span class="ico"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="" loading="lazy"></span>Node.js</span>
+        <span class="skill-chip"><span class="ico"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt="" loading="lazy"></span>Express.js</span>
+        <span class="skill-chip"><span class="ico"><i class="fas fa-plug"></i></span>REST APIs</span>
       </div>
     </div>
 
-    <!-- Skill Card: JavaScript -->
-    <div class="skill-item" data-percent="85">
-      <div class="skill-icon-wrap" style="--clr:#f0db4f;">
-        <i class="fab fa-js-square"></i>
+    <div class="skill-card">
+      <div class="skill-card-head">
+        <div class="skill-card-icon"><i class="fas fa-mobile-alt"></i></div>
+        <div><h3>Mobile</h3><small>Android development</small></div>
       </div>
-      <div class="skill-details">
-        <div class="skill-top">
-          <span class="skill-name">JavaScript</span>
-          <span class="skill-pct">85%</span>
-        </div>
-        <div class="skill-track">
-          <div class="skill-fill" style="--clr:#f0db4f; --w:85%;"></div>
-        </div>
+      <div class="skill-list">
+        <span class="skill-chip"><span class="ico"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="" loading="lazy"></span>Kotlin</span>
+        <span class="skill-chip"><span class="ico"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="" loading="lazy"></span>Android</span>
+        <span class="skill-chip"><span class="ico"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="" loading="lazy"></span>Java</span>
       </div>
     </div>
 
-    <!-- Skill Card: Java -->
-    <div class="skill-item" data-percent="60">
-      <div class="skill-icon-wrap" style="--clr:#f89820;">
-        <i class="fab fa-java"></i>
+    <div class="skill-card">
+      <div class="skill-card-head">
+        <div class="skill-card-icon"><i class="fas fa-database"></i></div>
+        <div><h3>Databases</h3><small>Storage &amp; realtime data</small></div>
       </div>
-      <div class="skill-details">
-        <div class="skill-top">
-          <span class="skill-name">Java</span>
-          <span class="skill-pct">60%</span>
-        </div>
-        <div class="skill-track">
-          <div class="skill-fill" style="--clr:#f89820; --w:60%;"></div>
-        </div>
+      <div class="skill-list">
+        <span class="skill-chip"><span class="ico"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="" loading="lazy"></span>MongoDB</span>
+        <span class="skill-chip"><span class="ico"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="" loading="lazy"></span>MySQL</span>
+        <span class="skill-chip"><span class="ico"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-original.svg" alt="" loading="lazy"></span>Firebase</span>
       </div>
     </div>
 
-    <!-- Skill Card: Python -->
-    <div class="skill-item" data-percent="80">
-      <div class="skill-icon-wrap" style="--clr:#3572A5;">
-        <i class="fas fa-dragon"></i>
+    <div class="skill-card">
+      <div class="skill-card-head">
+        <div class="skill-card-icon"><i class="fas fa-brain"></i></div>
+        <div><h3>AI / ML</h3><small>Computer vision &amp; gestures</small></div>
       </div>
-      <div class="skill-details">
-        <div class="skill-top">
-          <span class="skill-name">Python</span>
-          <span class="skill-pct">80%</span>
-        </div>
-        <div class="skill-track">
-          <div class="skill-fill" style="--clr:#3572A5; --w:80%;"></div>
-        </div>
+      <div class="skill-list">
+        <span class="skill-chip"><span class="ico"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="" loading="lazy"></span>TensorFlow Lite</span>
+        <span class="skill-chip"><span class="ico"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opencv/opencv-original.svg" alt="" loading="lazy"></span>OpenCV</span>
+        <span class="skill-chip"><span class="ico"><i class="fas fa-hand-paper"></i></span>MediaPipe</span>
+        <span class="skill-chip"><span class="ico"><i class="fas fa-eye"></i></span>YOLO</span>
       </div>
     </div>
 
-    <!-- Skill Card: ReactJS -->
-    <div class="skill-item" data-percent="55">
-      <div class="skill-icon-wrap" style="--clr:#61dbfb;">
-        <i class="fab fa-react"></i>
+    <div class="skill-card">
+      <div class="skill-card-head">
+        <div class="skill-card-icon"><i class="fas fa-tools"></i></div>
+        <div><h3>Tools &amp; Core</h3><small>Workflow &amp; fundamentals</small></div>
       </div>
-      <div class="skill-details">
-        <div class="skill-top">
-          <span class="skill-name">ReactJS</span>
-          <span class="skill-pct">55%</span>
-        </div>
-        <div class="skill-track">
-          <div class="skill-fill" style="--clr:#61dbfb; --w:55%;"></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Skill Card: NodeJS -->
-    <div class="skill-item" data-percent="70">
-      <div class="skill-icon-wrap" style="--clr:#3c873a;">
-        <i class="fab fa-node-js"></i>
-      </div>
-      <div class="skill-details">
-        <div class="skill-top">
-          <span class="skill-name">NodeJS</span>
-          <span class="skill-pct">70%</span>
-        </div>
-        <div class="skill-track">
-          <div class="skill-fill" style="--clr:#3c873a; --w:70%;"></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Skill Card: MySQL -->
-    <div class="skill-item" data-percent="97">
-      <div class="skill-icon-wrap" style="--clr:#f29111;">
-        <i class="fas fa-database"></i>
-      </div>
-      <div class="skill-details">
-        <div class="skill-top">
-          <span class="skill-name">MySQL</span>
-          <span class="skill-pct">97%</span>
-        </div>
-        <div class="skill-track">
-          <div class="skill-fill" style="--clr:#f29111; --w:97%;"></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Skill Card: FireBase -->
-    <div class="skill-item" data-percent="90">
-      <div class="skill-icon-wrap" style="--clr:#7965af;">
-        <i class="fas fa-code"></i>
-      </div>
-      <div class="skill-details">
-        <div class="skill-top">
-          <span class="skill-name">FireBase</span>
-          <span class="skill-pct">90%</span>
-        </div>
-        <div class="skill-track">
-          <div class="skill-fill" style="--clr:#7965af; --w:90%;"></div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Skill Card: Git & GitHub -->
-    <div class="skill-item" data-percent="90">
-      <div class="skill-icon-wrap" style="--clr:#f05032;">
-        <i class="fab fa-git-alt"></i>
-      </div>
-      <div class="skill-details">
-        <div class="skill-top">
-          <span class="skill-name">Git & GitHub</span>
-          <span class="skill-pct">88%</span>
-        </div>
-        <div class="skill-track">
-          <div class="skill-fill" style="--clr:#f05032; --w:88%;"></div>
-        </div>
+      <div class="skill-list">
+        <span class="skill-chip"><span class="ico"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="" loading="lazy"></span>Git</span>
+        <span class="skill-chip"><span class="ico"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="" loading="lazy"></span>GitHub</span>
+        <span class="skill-chip"><span class="ico"><i class="fas fa-project-diagram"></i></span>DSA</span>
+        <span class="skill-chip"><span class="ico"><i class="fas fa-music"></i></span>Web Audio &amp; Canvas</span>
       </div>
     </div>
 
@@ -287,189 +236,27 @@
   filter: brightness(0) invert(1);
   transition: filter 0.2s;
 }
-=================================================== */
-.skills {
-  position: relative;
-  background: #0a0a14;
-  padding: 6rem 2rem 7rem;
-  overflow: hidden;
-}
-
-/* Animated background orbs */
-.skills::before,
-.skills::after {
-  content: '';
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(90px);
-  opacity: 0.35;
-  pointer-events: none;
-}
-.skills::before {
-  width: 500px; height: 500px;
-  background: radial-gradient(circle, #4f46e5, transparent 70%);
-  top: -100px; left: -100px;
-  animation: orbFloat 8s ease-in-out infinite alternate;
-}
-.skills::after {
-  width: 400px; height: 400px;
-  background: radial-gradient(circle, #7c3aed, transparent 70%);
-  bottom: -80px; right: -80px;
-  animation: orbFloat 10s ease-in-out infinite alternate-reverse;
-}
-@keyframes orbFloat {
-  from { transform: translate(0,0) scale(1); }
-  to   { transform: translate(40px, 30px) scale(1.1); }
-}
-
-/* Section heading */
-.skills .heading {
-  color: #fff;
-  position: relative;
-  z-index: 2;
-}
-.skills .heading span { color: #a78bfa; }
-
-.skills-subtitle {
-  text-align: center;
-  color: rgba(255,255,255,0.45);
-  font-size: 1rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  margin-top: -0.5rem;
-  margin-bottom: 3rem;
-  position: relative;
-  z-index: 2;
-}
-
-/* Grid */
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 1.2rem 2rem;
-  max-width: 1000px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 2;
-}
-@media (max-width: 680px) {
-  .skills-grid { grid-template-columns: 1fr; }
-}
-
-/* Individual skill card */
-.skill-item {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  background: rgba(255,255,255,0.04);
-  border: 1px solid rgba(255,255,255,0.08);
-  border-radius: 16px;
-  padding: 1.1rem 1.4rem;
-  backdrop-filter: blur(12px);
-  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
-  cursor: default;
-}
-.skill-item:hover {
-  transform: translateY(-4px);
-  border-color: var(--hover-clr, rgba(167,139,250,0.5));
-  box-shadow: 0 8px 32px rgba(0,0,0,0.3), 0 0 0 1px rgba(167,139,250,0.15);
-}
-.skill-item:hover .skill-icon-wrap {
-  box-shadow: 0 0 20px color-mix(in srgb, var(--clr) 60%, transparent);
-}
-
-/* Icon bubble */
-.skill-icon-wrap {
-  flex-shrink: 0;
-  width: 52px; height: 52px;
-  border-radius: 14px;
-  background: color-mix(in srgb, var(--clr) 15%, #0a0a14);
-  border: 1.5px solid color-mix(in srgb, var(--clr) 40%, transparent);
-  display: flex; align-items: center; justify-content: center;
-  font-size: 1.6rem;
-  color: var(--clr);
-  transition: box-shadow 0.3s ease;
-}
-
-/* Skill name + percent row */
-.skill-details { flex: 1; min-width: 0; }
-
-.skill-top {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  margin-bottom: 0.55rem;
-}
-
-.skill-name {
-  color: #e2e8f0;
-  font-size: 1.5rem;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-}
-
-.skill-pct {
-  color: var(--clr);
-  font-size: 0.88rem;
-  font-weight: 700;
-  font-variant-numeric: tabular-nums;
-}
-
-/* Progress track */
-.skill-track {
-  background: rgba(255,255,255,0.07);
-  border-radius: 999px;
-  height: 6px;
-  overflow: hidden;
-  position: relative;
-}
-
-/* Progress fill — animates on scroll */
-.skill-fill {
-  height: 100%;
-  border-radius: 999px;
-  width: 0;
-  background: linear-gradient(90deg, color-mix(in srgb, var(--clr) 70%, #000), var(--clr));
-  box-shadow: 0 0 10px color-mix(in srgb, var(--clr) 80%, transparent);
-  transition: width 1.5s cubic-bezier(0.22, 1, 0.36, 1);
-  position: relative;
-}
-/* Shimmer effect on fill */
-.skill-fill::after {
-  content: '';
-  position: absolute;
-  top: 0; left: -60%;
-  width: 50%; height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.35), transparent);
-  animation: shimmer 2.5s infinite;
-}
-@keyframes shimmer {
-  0%   { left: -60%; }
-  100% { left: 130%; }
-}
 </style>
 
 <script>
-/* Animate skill bars when section enters viewport */
+/* Reveal skill cards when the section enters the viewport */
 (function () {
-  var section = document.getElementById('skills');
-  if (!section) return;
-  var animated = false;
+  var cards = document.querySelectorAll('#skills .skill-card');
+  if (!cards.length || !('IntersectionObserver' in window)) return;
 
-  function runBars() {
-    if (animated) return;
-    animated = true;
-    document.querySelectorAll('.skill-fill').forEach(function (fill, i) {
-      setTimeout(function () {
-        fill.style.width = getComputedStyle(fill).getPropertyValue('--w').trim();
-      }, i * 80);
-    });
-  }
+  cards.forEach(function (c) { c.classList.add('sk-hide'); });
 
   var io = new IntersectionObserver(function (entries) {
-    if (entries[0].isIntersecting) runBars();
+    entries.forEach(function (entry) {
+      if (!entry.isIntersecting) return;
+      var el = entry.target;
+      var i = Array.prototype.indexOf.call(cards, el) % 3;
+      setTimeout(function () { el.classList.remove('sk-hide'); }, i * 120);
+      io.unobserve(el);
+    });
   }, { threshold: 0.15 });
-  io.observe(section);
+
+  cards.forEach(function (c) { io.observe(c); });
 })();
 </script>
 
@@ -516,50 +303,63 @@
   <h2 class="heading"><i class="fas fa-laptop-code"></i> Projects <span>Made</span></h2>
   <p class="projects-subtitle">Things I've built</p>
 
+  <!-- ================================================================
+       PROJECTS — Edit each .project-card to add your real projects.
+       For each card, update:
+         • data-category  → tag shown on the badge (e.g. "Full Stack")
+         • The gradient colors in style="--g1:#...; --g2:#...;"
+         • The icon class  → any Font Awesome icon
+         • <h3>           → project name
+         • <p>            → short description (1-2 sentences)
+         • Tech span tags → replace with your actual tech stack
+         • href="#"       → replace with your live demo URL
+         • href="#"       → replace with your GitHub repo URL
+       To add more projects, copy a .project-card block and paste it.
+       ================================================================ -->
 
   <div class="projects-grid">
 
     <!-- ── PROJECT 1 ── -->
     <div class="project-card" data-category="Full Stack">
-      <div class="project-visual" style="--g1:#667eea; --g2:#764ba2;">
-        <a href="https://ibb.co/nNxZWHR0"><img src="https://i.ibb.co/pBYGmtnP/Screenshot-2026-08-20-221632.png" alt="Screenshot-2026-08-20-221632" border="0"></a>
+      <div class="project-visual" style="--g1:#0ea5e9; --g2:#6366f1;">
+        <i class="fas fa-network-wired"></i>
       </div>
       <div class="project-body">
         <span class="project-badge">Full Stack</span>
-        <h2>Skill Trading Platform</h2>
-        <p>SkillSwap is a peer-to-peer learning platform where users exchange skills directly — teaching what they know to learn something new..</p>
+        <h2>Provynk</h2>
+        <p>Provynk is a global talent network for SAP and enterprise tech professionals, employers and consultancies, with job posting, talent search, ATS resume scoring and team analytics.</p>
         <div class="project-tech">
           <span>HTML, CSS</span>
           <span>JavaScript</span>
-          <span>Nodejs</span>
           <span>FireBase</span>
+          <span>ATS Scoring</span>
         </div>
         <div class="project-links">
           <!-- Replace href="#" with your actual links -->
-          <a href="https://skillswap-web.netlify.app/home.html" target="_blank" class="proj-btn live"><i class="fas fa-eye"></i> Working Prototype</a>
-          <a href="https://github.com/parvvvv-v/SkillSwap" target="_blank" class="proj-btn code"><i class="fab fa-github"></i> Source Code</a>
+          <a href="https://www.provynk.com/" target="_blank" class="proj-btn live"><i class="fas fa-eye"></i> Live Website</a>
+          <a href="https://github.com/parvvvv-v/Provynk" target="_blank" class="proj-btn code"><i class="fab fa-github"></i> Source Code</a>
         </div>
       </div>
     </div>
 
     <!-- ── PROJECT 2 ── -->
-    <div class="project-card" data-category="Web">
-      <div class="project-visual" style="--g1:#f093fb; --g2:#f5576c;">
-        <a href="https://ibb.co/6cnGmvRS"><img src="https://i.ibb.co/NgVfs16q/square-image.jpg" alt="square-image" border="0"></a>
+    <div class="project-card" data-category="Full Stack">
+      <div class="project-visual" style="--g1:#667eea; --g2:#764ba2;">
+        <i class="fas fa-exchange-alt"></i>
       </div>
       <div class="project-body">
-        <span class="project-badge">Web Application</span>
-        <h2>AI Based Travel Itinerary Planner</h2>
-        <p>SafarMate is an interactive web app that uses location APIs to instantly generate custom travel itineraries and budget plans based on user preferences.</p>
+        <span class="project-badge">Full Stack</span>
+        <h2>SkillSwap</h2>
+        <p>SkillSwap is a peer-to-peer learning platform where skills are the currency. Users trade knowledge through smart matching and collaborate via real-time chat and live sessions.</p>
         <div class="project-tech">
-          <span>JavaSctipt</span>
+          <span>React</span>
           <span>Nodejs</span>
-          <span>API Integration</span>
-          <span>LocalStorage</span>
+          <span>Express</span>
+          <span>FireBase</span>
         </div>
         <div class="project-links">
-          <a href="https://safarmate.netlify.app/safarmate" target="_blank" class="proj-btn live"><i class="fas fa-eye"></i> Working Prototype</a>
-          <a href="https://github.com/parvvvv-v/SafarMate" target="_blank" class="proj-btn code"><i class="fab fa-github"></i> Source Code</a>
+          <a href="https://skillswap-web.netlify.app/" target="_blank" class="proj-btn live"><i class="fas fa-eye"></i> Working Prototype</a>
+          <a href="https://github.com/parvvvv-v/SkillSwap" target="_blank" class="proj-btn code"><i class="fab fa-github"></i> Source Code</a>
         </div>
       </div>
     </div>
@@ -567,7 +367,7 @@
     <!-- ── PROJECT 3 ── -->
     <div class="project-card" data-category="AI/ML">
       <div class="project-visual" style="--g1:#4facfe; --g2:#00f2fe;">
-       <a href="https://ibb.co/MD0DZj4X"><img src="https://i.ibb.co/bg9gQyZf/square-image-1.jpg" alt="square-image-1" border="0"></a>
+        <i class="fas fa-hand-sparkles"></i>
       </div>
       <div class="project-body">
         <span class="project-badge">AI/ML</span>
@@ -821,19 +621,6 @@
         </div>
       </div>
     </div>
-
-       <div class="container left">
-      <div class="content">
-        <div class="tag">
-          <h2>CodTech IT Solutions Pvt. Ltd.</h2>
-        </div>
-        <div class="desc">
-            <h3>Full Stack Web Developer | Internship</h3>
-            <p>May 2026 - July 2026</p>
-        </div>
-      </div>
-    </div>
-      
   </div>
 </div>
 
@@ -908,7 +695,7 @@
           <p> <i class="fas fa-map-marked-alt"></i>Kota, Rajasthan</p>
           <div class="share">
 
-              <a href="https://www.linkedin.com/in/parv-bansal-8472b6282/" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
+              <a href=" href="https://www.linkedin.com/in/parv-bansal-8472b6282/" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
               <a href="https://github.com/parvvvv-v" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
               <a href="mailto:parv.proff@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
               <a href="https://www.instagram.com/dumb.parvv_/" class="fab fa-instagram" aria-label="Instagram" target="_blank"></a>
@@ -917,7 +704,7 @@
       </div>
   </div>
 
-  <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/parv-bansal-8472b6282/">Parv Bansal</a></h1>
+  <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href=" href="https://www.linkedin.com/in/parv-bansal-8472b6282/">Parv Bansal</a></h1>
 
 </section>
 <!-- footer section ends -->
